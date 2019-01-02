@@ -3,9 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="wrapper">
+		<img src="https://cdn0.iconfinder.com/data/iconsets/previews/medium/raising-children-filled-outline.png" alt="">
+		<img src="https://cdn3.iconfinder.com/data/iconsets/previews/medium/food-line-11.png" alt="">
+		<img src="https://cdn3.iconfinder.com/data/iconsets/previews/medium/commute-3.png" alt="">
+	</div>
 	<script>
+		document.onclick = function (event) {
+			if (event.target.tagName == 'IMG') {
+				event.target.classList.add('bordered');
+			}
+		}
 	</script>
 </body>
 </html>
