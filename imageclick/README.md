@@ -1,1 +1,1 @@
-add class onckick
+add class onclick
