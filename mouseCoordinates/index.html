@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="block"></div>
+	<p>Coordinates X: <span class="offx"></span>, Y: <span class="offy"></span></p>
+
+	<script>
+		document.querySelector('.block').onmousemove = function (event) {
+			event = event || window.event;
+			document.querySelector('.offx').innerHTML = event.offsetX;
+			document.querySelector('.offy').innerHTML = event.offsetY;
+
+		}
+	</script>
+</body>
+</html>
